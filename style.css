@@ -1,0 +1,317 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #ffffff;
+color: #000000;
+min-height: 100vh;
+}
+
+.navbar {
+background: #000000;
+border-bottom: 3px solid #d4af37;
+padding: 15px 0;
+}
+
+.navbar-brand {
+color: #ffffff;
+font-size: 22px;
+font-weight: 900;
+letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+color: #d4af37;
+}
+
+.nav-link {
+color: #ffffff !important;
+font-weight: bold;
+margin-left: 15px;
+}
+
+.nav-link:hover {
+color: #d4af37 !important;
+}
+
+.navbar-toggler {
+border: 1px solid #d4af37;
+}
+
+.container {
+max-width: 1100px;
+}
+
+.brand {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 45px 0;
+}
+
+.brand-circle {
+width: 260px;
+height: 260px;
+border: 8px solid #000000;
+border-radius: 50%;
+background: #ffffff;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+}
+
+.brand-circle h1 {
+font-size: 30px;
+font-weight: 900;
+color: #000000;
+line-height: 1.2;
+}
+
+section {
+margin-top: 55px;
+scroll-margin-top: 90px;
+}
+
+section > h2 {
+font-size: 34px;
+font-weight: 900;
+color: #000000;
+margin-bottom: 8px;
+}
+
+section > p {
+color: #666666;
+font-weight: 600;
+margin-bottom: 25px;
+}
+
+.row {
+margin-top: 20px;
+}
+
+.card {
+border: 2px solid #e1e1e1;
+border-radius: 18px;
+background: #ffffff;
+box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+transition: 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+border-color: #d4af37;
+box-shadow: 0 12px 30px rgba(0,0,0,0.16);
+}
+
+.card-body {
+padding: 25px;
+}
+
+.card h5 {
+font-size: 18px;
+font-weight: 900;
+color: #000000;
+}
+
+.card h3 {
+font-size: 34px;
+font-weight: 900;
+color: #d4af37;
+margin: 12px 0;
+}
+
+.card p {
+color: #666666;
+font-weight: 600;
+}
+
+.progress-card {
+margin-top: 25px;
+border: 2px solid #d4af37;
+}
+
+.progress-card h4 {
+font-size: 24px;
+font-weight: 900;
+color: #000000;
+}
+
+.progress {
+height: 18px;
+background: #eeeeee;
+border-radius: 20px;
+overflow: hidden;
+}
+
+.progress-bar {
+background: #d4af37;
+color: #000000;
+font-weight: 900;
+transition: width 0.4s ease;
+}
+
+#progressText {
+text-align: center;
+font-size: 32px;
+font-weight: 900;
+color: #d4af37;
+margin-top: 15px;
+}
+
+.form-control {
+border: 2px solid #dddddd;
+border-radius: 10px;
+padding: 12px 15px;
+margin-bottom: 15px;
+color: #000000;
+}
+
+.form-control:focus {
+border-color: #d4af37;
+box-shadow: 0 0 0 3px rgba(212,175,55,0.15);
+}
+
+.btn-dark {
+background: #000000;
+border: 2px solid #000000;
+font-weight: 800;
+border-radius: 10px;
+padding: 10px 20px;
+margin-bottom: 20px;
+}
+
+.btn-dark:hover {
+background: #d4af37;
+border-color: #d4af37;
+color: #000000;
+}
+
+.list-group {
+margin-top: 10px;
+}
+
+.list-group-item {
+border: 1px solid #e5e5e5;
+padding: 15px;
+font-weight: 600;
+}
+
+.prayer-list {
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+.prayer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background: #ffffff;
+border: 2px solid #dddddd;
+border-radius: 16px;
+box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+transition: 0.3s ease;
+}
+
+.prayer:hover {
+border-color: #d4af37;
+transform: translateX(5px);
+}
+
+.prayer h5 {
+font-size: 21px;
+font-weight: 900;
+margin-bottom: 5px;
+}
+
+.prayer p {
+margin: 0;
+color: #666666;
+font-weight: bold;
+}
+
+.prayer-check {
+width: 27px;
+height: 27px;
+cursor: pointer;
+accent-color: #d4af37;
+}
+
+#prayerCount {
+font-size: 38px;
+font-weight: 900;
+color: #d4af37;
+}
+
+#exerciseList {
+margin-top: 15px;
+}
+
+footer {
+margin-top: 60px;
+padding: 30px;
+background: #000000;
+color: #ffffff;
+text-align: center;
+border-top: 3px solid #d4af37;
+font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+.brand {
+padding: 30px 0;
+}
+
+.brand-circle {
+width: 210px;
+height: 210px;
+border-width: 6px;
+}
+
+.brand-circle h1 {
+font-size: 24px;
+}
+
+section > h2 {
+font-size: 28px;
+}
+
+.nav-link {
+margin-left: 0;
+margin-top: 8px;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.brand-circle {
+width: 180px;
+height: 180px;
+}
+
+.brand-circle h1 {
+font-size: 21px;
+}
+
+.card-body {
+padding: 20px;
+}
+
+.prayer {
+padding: 16px;
+}
+
+}
